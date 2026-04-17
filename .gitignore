@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Build folders
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Truffle build
+blockchain/build/
+
+# Ganache files (if any)
+*.log

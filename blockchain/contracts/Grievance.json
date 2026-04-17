@@ -142,22 +142,22 @@
   "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"complaintCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"complaints\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"studentHash\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"ipfsHash\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"voteCount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"resolved\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_studentHash\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"_ipfsHash\",\"type\":\"string\"}],\"name\":\"fileComplaint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"getComplaint\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"_approve\",\"type\":\"bool\"}],\"name\":\"voteOnComplaint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Grievance.sol\":\"Grievance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Grievance.sol\":{\"keccak256\":\"0xd3d70caad01e21b75f398129033dc98b7a775781cdf6bb5949190edd909c3f69\",\"urls\":[\"bzz-raw://e385cb54b6a3b9466c94e748158893eff62f948d242b76f85a31f59a956cc471\",\"dweb:/ipfs/QmZNkRrTL7mAm2EL1Mq3AWX8pUxWVuU4TRQEaE8zPn35iL\"]}},\"version\":1}",
   "bytecode": "0x60806040526000805534801561001457600080fd5b506107fa806100246000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80632edea2941461005c5780636cd558401461007a5780637e69e912146100b4578063affefce81461017b578063dee8ae4314610240575b600080fd5b610064610307565b6040518082815260200191505060405180910390f35b6100b26004803603604081101561009057600080fd5b810190808035906020019092919080351515906020019092919050505061030d565b005b6100e0600480360360208110156100ca57600080fd5b8101908080359060200190929190505050610422565b604051808681526020018581526020018060200184815260200183151515158152602001828103825285818151815260200191508051906020019080838360005b8381101561013c578082015181840152602081019050610121565b50505050905090810190601f1680156101695780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b61023e6004803603604081101561019157600080fd5b8101908080359060200190929190803590602001906401000000008111156101b857600080fd5b8201836020820111156101ca57600080fd5b803590602001918460018302840111640100000000831117156101ec57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506104fd565b005b61026c6004803603602081101561025657600080fd5b81019080803590602001909291905050506105b1565b604051808681526020018581526020018060200184815260200183151515158152602001828103825285818151815260200191508051906020019080838360005b838110156102c85780820151818401526020810190506102ad565b50505050905090810190601f1680156102f55780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b60005481565b6001600083815260200190815260200160002060040160009054906101000a900460ff16156103a4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f416c7265616479207265736f6c7665640000000000000000000000000000000081525060200191505060405180910390fd5b80156103d15760016000838152602001908152602001600020600301600081548092919060010191905055505b600360016000848152602001908152602001600020600301541061041e57600180600084815260200190815260200160002060040160006101000a81548160ff0219169083151502179055505b5050565b6001602052806000526040600020600091509050806000015490806001015490806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104da5780601f106104af576101008083540402835291602001916104da565b820191906000526020600020905b8154815290600101906020018083116104bd57829003601f168201915b5050505050908060030154908060040160009054906101000a900460ff16905085565b60008081548092919060010191905055506040518060a001604052806000548152602001838152602001828152602001600081526020016000151581525060016000805481526020019081526020016000206000820151816000015560208201518160010155604082015181600201908051906020019061057f9291906106ec565b506060820151816003015560808201518160040160006101000a81548160ff0219169083151502179055509050505050565b60008060606000806105c161076c565b600160008881526020019081526020016000206040518060a00160405290816000820154815260200160018201548152602001600282018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561068c5780601f106106615761010080835404028352916020019161068c565b820191906000526020600020905b81548152906001019060200180831161066f57829003601f168201915b50505050508152602001600382015481526020016004820160009054906101000a900460ff161515151581525050905080600001518160200151826040015183606001518460800151829250955095509550955095505091939590929450565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061072d57805160ff191683800117855561075b565b8280016001018555821561075b579182015b8281111561075a57825182559160200191906001019061073f565b5b50905061076891906107a0565b5090565b6040518060a00160405280600081526020016000801916815260200160608152602001600081526020016000151581525090565b6107c291905b808211156107be5760008160009055506001016107a6565b5090565b9056fea265627a7a7231582054078adab5a0932ee19fe22162f1b7aaad3637b19eec0ec80bc821ed4b98934264736f6c63430005100032",
   "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80632edea2941461005c5780636cd558401461007a5780637e69e912146100b4578063affefce81461017b578063dee8ae4314610240575b600080fd5b610064610307565b6040518082815260200191505060405180910390f35b6100b26004803603604081101561009057600080fd5b810190808035906020019092919080351515906020019092919050505061030d565b005b6100e0600480360360208110156100ca57600080fd5b8101908080359060200190929190505050610422565b604051808681526020018581526020018060200184815260200183151515158152602001828103825285818151815260200191508051906020019080838360005b8381101561013c578082015181840152602081019050610121565b50505050905090810190601f1680156101695780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b61023e6004803603604081101561019157600080fd5b8101908080359060200190929190803590602001906401000000008111156101b857600080fd5b8201836020820111156101ca57600080fd5b803590602001918460018302840111640100000000831117156101ec57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506104fd565b005b61026c6004803603602081101561025657600080fd5b81019080803590602001909291905050506105b1565b604051808681526020018581526020018060200184815260200183151515158152602001828103825285818151815260200191508051906020019080838360005b838110156102c85780820151818401526020810190506102ad565b50505050905090810190601f1680156102f55780820380516001836020036101000a031916815260200191505b50965050505050505060405180910390f35b60005481565b6001600083815260200190815260200160002060040160009054906101000a900460ff16156103a4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f416c7265616479207265736f6c7665640000000000000000000000000000000081525060200191505060405180910390fd5b80156103d15760016000838152602001908152602001600020600301600081548092919060010191905055505b600360016000848152602001908152602001600020600301541061041e57600180600084815260200190815260200160002060040160006101000a81548160ff0219169083151502179055505b5050565b6001602052806000526040600020600091509050806000015490806001015490806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104da5780601f106104af576101008083540402835291602001916104da565b820191906000526020600020905b8154815290600101906020018083116104bd57829003601f168201915b5050505050908060030154908060040160009054906101000a900460ff16905085565b60008081548092919060010191905055506040518060a001604052806000548152602001838152602001828152602001600081526020016000151581525060016000805481526020019081526020016000206000820151816000015560208201518160010155604082015181600201908051906020019061057f9291906106ec565b506060820151816003015560808201518160040160006101000a81548160ff0219169083151502179055509050505050565b60008060606000806105c161076c565b600160008881526020019081526020016000206040518060a00160405290816000820154815260200160018201548152602001600282018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561068c5780601f106106615761010080835404028352916020019161068c565b820191906000526020600020905b81548152906001019060200180831161066f57829003601f168201915b50505050508152602001600382015481526020016004820160009054906101000a900460ff161515151581525050905080600001518160200151826040015183606001518460800151829250955095509550955095505091939590929450565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061072d57805160ff191683800117855561075b565b8280016001018555821561075b579182015b8281111561075a57825182559160200191906001019061073f565b5b50905061076891906107a0565b5090565b6040518060a00160405280600081526020016000801916815260200160608152602001600081526020016000151581525090565b6107c291905b808211156107be5760008160009055506001016107a6565b5090565b9056fea265627a7a7231582054078adab5a0932ee19fe22162f1b7aaad3637b19eec0ec80bc821ed4b98934264736f6c63430005100032",
-  "sourceMap": "61:1248:1:-;;;274:1;245:30;;61:1248;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:1248:1;;;;;;;",
-  "deployedSourceMap": "61:1248:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:1248:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;245:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;684:350;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;684:350:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;284:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;284:44:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;284:44:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;360:290;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;360:290:1;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;360:290:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;360:290:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;360:290:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;360:290:1;;;;;;;;;;;;;;;:::i;:::-;;1064:242;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1064:242:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1064:242:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;245:30;;;;:::o;684:350::-;761:10;:15;772:3;761:15;;;;;;;;;;;:24;;;;;;;;;;;;760:25;752:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;823:8;819:68;;;848:10;:15;859:3;848:15;;;;;;;;;;;:25;;;:27;;;;;;;;;;;;;819:68;966:1;937:10;:15;948:3;937:15;;;;;;;;;;;:25;;;:30;933:94;;1011:4;984:10;:15;995:3;984:15;;;;;;;;;;;:24;;;:31;;;;;;;;;;;;;;;;;;933:94;684:350;;:::o;284:44::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;360:290::-;448:14;;:16;;;;;;;;;;;;;506:136;;;;;;;;530:14;;506:136;;;;559:12;506:136;;;;586:9;506:136;;;;610:1;506:136;;;;626:5;506:136;;;;;477:10;:26;488:14;;477:26;;;;;;;;;;;:165;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;360:290;;:::o;1064:242::-;1127:4;1133:7;1142:13;1157:4;1163;1186:18;;:::i;:::-;1207:10;:15;1218:3;1207:15;;;;;;;;;;;1186:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1241:1;:4;;;1247:1;:13;;;1262:1;:10;;;1274:1;:11;;;1287:1;:10;;;1233:65;;;;;;;;;;;;;;1064:242;;;;;;;:::o;61:1248::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "sourceMap": "61:1248:0:-;;;274:1;245:30;;61:1248;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:1248:0;;;;;;;",
+  "deployedSourceMap": "61:1248:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:1248:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;245:30;;;:::i;:::-;;;;;;;;;;;;;;;;;;;684:350;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;684:350:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;284:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;284:44:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;284:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;360:290;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;360:290:0;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;360:290:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;360:290:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;360:290:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;360:290:0;;;;;;;;;;;;;;;:::i;:::-;;1064:242;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1064:242:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1064:242:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;245:30;;;;:::o;684:350::-;761:10;:15;772:3;761:15;;;;;;;;;;;:24;;;;;;;;;;;;760:25;752:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;823:8;819:68;;;848:10;:15;859:3;848:15;;;;;;;;;;;:25;;;:27;;;;;;;;;;;;;819:68;966:1;937:10;:15;948:3;937:15;;;;;;;;;;;:25;;;:30;933:94;;1011:4;984:10;:15;995:3;984:15;;;;;;;;;;;:24;;;:31;;;;;;;;;;;;;;;;;;933:94;684:350;;:::o;284:44::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;360:290::-;448:14;;:16;;;;;;;;;;;;;506:136;;;;;;;;530:14;;506:136;;;;559:12;506:136;;;;586:9;506:136;;;;610:1;506:136;;;;626:5;506:136;;;;;477:10;:26;488:14;;477:26;;;;;;;;;;;:165;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;360:290;;:::o;1064:242::-;1127:4;1133:7;1142:13;1157:4;1163;1186:18;;:::i;:::-;1207:10;:15;1218:3;1207:15;;;;;;;;;;;1186:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1241:1;:4;;;1247:1;:13;;;1262:1;:10;;;1274:1;:11;;;1287:1;:10;;;1233:65;;;;;;;;;;;;;;1064:242;;;;;;;:::o;61:1248::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.5.16;\r\n\r\ncontract Grievance {\r\n\r\n    struct Complaint {\r\n        uint id;\r\n        bytes32 studentHash;\r\n        string ipfsHash;\r\n        uint voteCount;\r\n        bool resolved;\r\n    }\r\n\r\n    uint public complaintCount = 0;\r\n\r\n    mapping(uint => Complaint) public complaints;\r\n\r\n    // File complaint\r\n    function fileComplaint(bytes32 _studentHash, string memory _ipfsHash) public {\r\n        complaintCount++;\r\n\r\n        complaints[complaintCount] = Complaint(\r\n            complaintCount,\r\n            _studentHash,\r\n            _ipfsHash,\r\n            0,\r\n            false\r\n        );\r\n    }\r\n\r\n    // Vote on complaint\r\n    function voteOnComplaint(uint _id, bool _approve) public {\r\n        require(!complaints[_id].resolved, \"Already resolved\");\r\n\r\n        if (_approve) {\r\n            complaints[_id].voteCount++;\r\n        }\r\n\r\n        // Resolve after 3 votes\r\n        if (complaints[_id].voteCount >= 3) {\r\n            complaints[_id].resolved = true;\r\n        }\r\n    }\r\n\r\n    // Get complaint\r\n    function getComplaint(uint _id) public view returns (\r\n        uint, bytes32, string memory, uint, bool\r\n    ) {\r\n        Complaint memory c = complaints[_id];\r\n        return (c.id, c.studentHash, c.ipfsHash, c.voteCount, c.resolved);\r\n    }\r\n}",
   "sourcePath": "C:\\Users\\DELL\\student-grievance-blockchain\\blockchain\\contracts\\Grievance.sol",
   "ast": {
     "absolutePath": "project:/contracts/Grievance.sol",
     "exportedSymbols": {
       "Grievance": [
-        120
+        118
       ]
     },
-    "id": 121,
+    "id": 119,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -165,7 +165,7 @@
           ".16"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:24:1"
+        "src": "33:24:0"
       },
       {
         "baseContracts": [],
@@ -173,24 +173,24 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 120,
+        "id": 118,
         "linearizedBaseContracts": [
-          120
+          118
         ],
         "name": "Grievance",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Grievance.Complaint",
-            "id": 14,
+            "id": 12,
             "members": [
               {
                 "constant": false,
-                "id": 5,
+                "id": 3,
                 "name": "id",
                 "nodeType": "VariableDeclaration",
-                "scope": 14,
-                "src": "117:7:1",
+                "scope": 12,
+                "src": "117:7:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -198,10 +198,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4,
+                  "id": 2,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "117:4:1",
+                  "src": "117:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -212,11 +212,11 @@
               },
               {
                 "constant": false,
-                "id": 7,
+                "id": 5,
                 "name": "studentHash",
                 "nodeType": "VariableDeclaration",
-                "scope": 14,
-                "src": "135:19:1",
+                "scope": 12,
+                "src": "135:19:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -224,10 +224,10 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 6,
+                  "id": 4,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "135:7:1",
+                  "src": "135:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -238,11 +238,11 @@
               },
               {
                 "constant": false,
-                "id": 9,
+                "id": 7,
                 "name": "ipfsHash",
                 "nodeType": "VariableDeclaration",
-                "scope": 14,
-                "src": "165:15:1",
+                "scope": 12,
+                "src": "165:15:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -250,10 +250,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 8,
+                  "id": 6,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "165:6:1",
+                  "src": "165:6:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -264,11 +264,11 @@
               },
               {
                 "constant": false,
-                "id": 11,
+                "id": 9,
                 "name": "voteCount",
                 "nodeType": "VariableDeclaration",
-                "scope": 14,
-                "src": "191:14:1",
+                "scope": 12,
+                "src": "191:14:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -276,10 +276,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 10,
+                  "id": 8,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
-                  "src": "191:4:1",
+                  "src": "191:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -290,11 +290,11 @@
               },
               {
                 "constant": false,
-                "id": 13,
+                "id": 11,
                 "name": "resolved",
                 "nodeType": "VariableDeclaration",
-                "scope": 14,
-                "src": "216:13:1",
+                "scope": 12,
+                "src": "216:13:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -302,10 +302,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 12,
+                  "id": 10,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "216:4:1",
+                  "src": "216:4:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -317,17 +317,17 @@
             ],
             "name": "Complaint",
             "nodeType": "StructDefinition",
-            "scope": 120,
-            "src": "89:148:1",
+            "scope": 118,
+            "src": "89:148:0",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 17,
+            "id": 15,
             "name": "complaintCount",
             "nodeType": "VariableDeclaration",
-            "scope": 120,
-            "src": "245:30:1",
+            "scope": 118,
+            "src": "245:30:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -335,10 +335,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 15,
+              "id": 13,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "245:4:1",
+              "src": "245:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -347,14 +347,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 16,
+              "id": 14,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "274:1:1",
+              "src": "274:1:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
@@ -366,44 +366,44 @@
           },
           {
             "constant": false,
-            "id": 21,
+            "id": 19,
             "name": "complaints",
             "nodeType": "VariableDeclaration",
-            "scope": 120,
-            "src": "284:44:1",
+            "scope": 118,
+            "src": "284:44:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
               "typeString": "mapping(uint256 => struct Grievance.Complaint)"
             },
             "typeName": {
-              "id": 20,
+              "id": 18,
               "keyType": {
-                "id": 18,
+                "id": 16,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "292:4:1",
+                "src": "292:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "284:26:1",
+              "src": "284:26:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                 "typeString": "mapping(uint256 => struct Grievance.Complaint)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 19,
+                "id": 17,
                 "name": "Complaint",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 14,
-                "src": "300:9:1",
+                "referencedDeclaration": 12,
+                "src": "300:9:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Complaint_$14_storage_ptr",
+                  "typeIdentifier": "t_struct$_Complaint_$12_storage_ptr",
                   "typeString": "struct Grievance.Complaint"
                 }
               }
@@ -413,14 +413,14 @@
           },
           {
             "body": {
-              "id": 43,
+              "id": 41,
               "nodeType": "Block",
-              "src": "437:213:1",
+              "src": "437:213:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 29,
+                    "id": 27,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -428,15 +428,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "448:16:1",
+                    "src": "448:16:0",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 28,
+                      "id": 26,
                       "name": "complaintCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 17,
-                      "src": "448:14:1",
+                      "referencedDeclaration": 15,
+                      "src": "448:14:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -447,14 +447,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 30,
+                  "id": 28,
                   "nodeType": "ExpressionStatement",
-                  "src": "448:16:1"
+                  "src": "448:16:0"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 41,
+                    "id": 39,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -463,26 +463,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 31,
+                        "id": 29,
                         "name": "complaints",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 21,
-                        "src": "477:10:1",
+                        "referencedDeclaration": 19,
+                        "src": "477:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                           "typeString": "mapping(uint256 => struct Grievance.Complaint storage ref)"
                         }
                       },
-                      "id": 33,
+                      "id": 31,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 32,
+                        "id": 30,
                         "name": "complaintCount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 17,
-                        "src": "488:14:1",
+                        "referencedDeclaration": 15,
+                        "src": "488:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -493,9 +493,9 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "477:26:1",
+                      "src": "477:26:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                        "typeIdentifier": "t_struct$_Complaint_$12_storage",
                         "typeString": "struct Grievance.Complaint storage ref"
                       }
                     },
@@ -506,12 +506,12 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 35,
+                          "id": 33,
                           "name": "complaintCount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 17,
-                          "src": "530:14:1",
+                          "referencedDeclaration": 15,
+                          "src": "530:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -519,12 +519,12 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 36,
+                          "id": 34,
                           "name": "_studentHash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 23,
-                          "src": "559:12:1",
+                          "referencedDeclaration": 21,
+                          "src": "559:12:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -532,12 +532,12 @@
                         },
                         {
                           "argumentTypes": null,
-                          "id": 37,
+                          "id": 35,
                           "name": "_ipfsHash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 25,
-                          "src": "586:9:1",
+                          "referencedDeclaration": 23,
+                          "src": "586:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -546,14 +546,14 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 38,
+                          "id": 36,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "610:1:1",
+                          "src": "610:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -564,14 +564,14 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 39,
+                          "id": 37,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "bool",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "626:5:1",
+                          "src": "626:5:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -603,18 +603,18 @@
                             "typeString": "bool"
                           }
                         ],
-                        "id": 34,
+                        "id": 32,
                         "name": "Complaint",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 14,
-                        "src": "506:9:1",
+                        "referencedDeclaration": 12,
+                        "src": "506:9:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Complaint_$14_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Complaint_$12_storage_ptr_$",
                           "typeString": "type(struct Grievance.Complaint storage pointer)"
                         }
                       },
-                      "id": 40,
+                      "id": 38,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -622,42 +622,42 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "506:136:1",
+                      "src": "506:136:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Complaint_$14_memory",
+                        "typeIdentifier": "t_struct$_Complaint_$12_memory",
                         "typeString": "struct Grievance.Complaint memory"
                       }
                     },
-                    "src": "477:165:1",
+                    "src": "477:165:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                      "typeIdentifier": "t_struct$_Complaint_$12_storage",
                       "typeString": "struct Grievance.Complaint storage ref"
                     }
                   },
-                  "id": 42,
+                  "id": 40,
                   "nodeType": "ExpressionStatement",
-                  "src": "477:165:1"
+                  "src": "477:165:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 44,
+            "id": 42,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "fileComplaint",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 26,
+              "id": 24,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 23,
+                  "id": 21,
                   "name": "_studentHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 44,
-                  "src": "383:20:1",
+                  "scope": 42,
+                  "src": "383:20:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -665,10 +665,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 22,
+                    "id": 20,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "383:7:1",
+                    "src": "383:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -679,11 +679,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 25,
+                  "id": 23,
                   "name": "_ipfsHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 44,
-                  "src": "405:23:1",
+                  "scope": 42,
+                  "src": "405:23:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -691,10 +691,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 24,
+                    "id": 22,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "405:6:1",
+                    "src": "405:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -704,25 +704,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "382:47:1"
+              "src": "382:47:0"
             },
             "returnParameters": {
-              "id": 27,
+              "id": 25,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "437:0:1"
+              "src": "437:0:0"
             },
-            "scope": 120,
-            "src": "360:290:1",
+            "scope": 118,
+            "src": "360:290:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 84,
+              "id": 82,
               "nodeType": "Block",
-              "src": "741:293:1",
+              "src": "741:293:0",
               "statements": [
                 {
                   "expression": {
@@ -730,7 +730,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 56,
+                        "id": 54,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -738,33 +738,33 @@
                         "nodeType": "UnaryOperation",
                         "operator": "!",
                         "prefix": true,
-                        "src": "760:25:1",
+                        "src": "760:25:0",
                         "subExpression": {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 52,
+                              "id": 50,
                               "name": "complaints",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 21,
-                              "src": "761:10:1",
+                              "referencedDeclaration": 19,
+                              "src": "761:10:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                                 "typeString": "mapping(uint256 => struct Grievance.Complaint storage ref)"
                               }
                             },
-                            "id": 54,
+                            "id": 52,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 53,
+                              "id": 51,
                               "name": "_id",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 46,
-                              "src": "772:3:1",
+                              "referencedDeclaration": 44,
+                              "src": "772:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -775,21 +775,21 @@
                             "isPure": false,
                             "lValueRequested": false,
                             "nodeType": "IndexAccess",
-                            "src": "761:15:1",
+                            "src": "761:15:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                              "typeIdentifier": "t_struct$_Complaint_$12_storage",
                               "typeString": "struct Grievance.Complaint storage ref"
                             }
                           },
-                          "id": 55,
+                          "id": 53,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "resolved",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 13,
-                          "src": "761:24:1",
+                          "referencedDeclaration": 11,
+                          "src": "761:24:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -803,14 +803,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "416c7265616479207265736f6c766564",
-                        "id": 57,
+                        "id": 55,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "787:18:1",
+                        "src": "787:18:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_93fa98edee474224afc05e42d3e2176f716d77ff4294c8908d645d4a7a7d436e",
@@ -830,21 +830,21 @@
                           "typeString": "literal_string \"Already resolved\""
                         }
                       ],
-                      "id": 51,
+                      "id": 49,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        138,
-                        139
+                        136,
+                        137
                       ],
-                      "referencedDeclaration": 139,
-                      "src": "752:7:1",
+                      "referencedDeclaration": 137,
+                      "src": "752:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 58,
+                    "id": 56,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -852,43 +852,43 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "752:54:1",
+                    "src": "752:54:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 59,
+                  "id": 57,
                   "nodeType": "ExpressionStatement",
-                  "src": "752:54:1"
+                  "src": "752:54:0"
                 },
                 {
                   "condition": {
                     "argumentTypes": null,
-                    "id": 60,
+                    "id": 58,
                     "name": "_approve",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 48,
-                    "src": "823:8:1",
+                    "referencedDeclaration": 46,
+                    "src": "823:8:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": null,
-                  "id": 68,
+                  "id": 66,
                   "nodeType": "IfStatement",
-                  "src": "819:68:1",
+                  "src": "819:68:0",
                   "trueBody": {
-                    "id": 67,
+                    "id": 65,
                     "nodeType": "Block",
-                    "src": "833:54:1",
+                    "src": "833:54:0",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 65,
+                          "id": 63,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -896,33 +896,33 @@
                           "nodeType": "UnaryOperation",
                           "operator": "++",
                           "prefix": false,
-                          "src": "848:27:1",
+                          "src": "848:27:0",
                           "subExpression": {
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
                               "baseExpression": {
                                 "argumentTypes": null,
-                                "id": 61,
+                                "id": 59,
                                 "name": "complaints",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 21,
-                                "src": "848:10:1",
+                                "referencedDeclaration": 19,
+                                "src": "848:10:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                                   "typeString": "mapping(uint256 => struct Grievance.Complaint storage ref)"
                                 }
                               },
-                              "id": 63,
+                              "id": 61,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 62,
+                                "id": 60,
                                 "name": "_id",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 46,
-                                "src": "859:3:1",
+                                "referencedDeclaration": 44,
+                                "src": "859:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -933,21 +933,21 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "848:15:1",
+                              "src": "848:15:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                                "typeIdentifier": "t_struct$_Complaint_$12_storage",
                                 "typeString": "struct Grievance.Complaint storage ref"
                               }
                             },
-                            "id": 64,
+                            "id": 62,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
                             "memberName": "voteCount",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 11,
-                            "src": "848:25:1",
+                            "referencedDeclaration": 9,
+                            "src": "848:25:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -958,9 +958,9 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 66,
+                        "id": 64,
                         "nodeType": "ExpressionStatement",
-                        "src": "848:27:1"
+                        "src": "848:27:0"
                       }
                     ]
                   }
@@ -972,7 +972,7 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 74,
+                    "id": 72,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -983,26 +983,26 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 69,
+                          "id": 67,
                           "name": "complaints",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 21,
-                          "src": "937:10:1",
+                          "referencedDeclaration": 19,
+                          "src": "937:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                             "typeString": "mapping(uint256 => struct Grievance.Complaint storage ref)"
                           }
                         },
-                        "id": 71,
+                        "id": 69,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 70,
+                          "id": 68,
                           "name": "_id",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 46,
-                          "src": "948:3:1",
+                          "referencedDeclaration": 44,
+                          "src": "948:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1013,21 +1013,21 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "937:15:1",
+                        "src": "937:15:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                          "typeIdentifier": "t_struct$_Complaint_$12_storage",
                           "typeString": "struct Grievance.Complaint storage ref"
                         }
                       },
-                      "id": 72,
+                      "id": 70,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "voteCount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11,
-                      "src": "937:25:1",
+                      "referencedDeclaration": 9,
+                      "src": "937:25:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1038,14 +1038,14 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "33",
-                      "id": 73,
+                      "id": 71,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "966:1:1",
+                      "src": "966:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_3_by_1",
@@ -1053,25 +1053,25 @@
                       },
                       "value": "3"
                     },
-                    "src": "937:30:1",
+                    "src": "937:30:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": null,
-                  "id": 83,
+                  "id": 81,
                   "nodeType": "IfStatement",
-                  "src": "933:94:1",
+                  "src": "933:94:0",
                   "trueBody": {
-                    "id": 82,
+                    "id": 80,
                     "nodeType": "Block",
-                    "src": "969:58:1",
+                    "src": "969:58:0",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 80,
+                          "id": 78,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1082,26 +1082,26 @@
                               "argumentTypes": null,
                               "baseExpression": {
                                 "argumentTypes": null,
-                                "id": 75,
+                                "id": 73,
                                 "name": "complaints",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 21,
-                                "src": "984:10:1",
+                                "referencedDeclaration": 19,
+                                "src": "984:10:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                                   "typeString": "mapping(uint256 => struct Grievance.Complaint storage ref)"
                                 }
                               },
-                              "id": 77,
+                              "id": 75,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 76,
+                                "id": 74,
                                 "name": "_id",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 46,
-                                "src": "995:3:1",
+                                "referencedDeclaration": 44,
+                                "src": "995:3:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -1112,21 +1112,21 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "984:15:1",
+                              "src": "984:15:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                                "typeIdentifier": "t_struct$_Complaint_$12_storage",
                                 "typeString": "struct Grievance.Complaint storage ref"
                               }
                             },
-                            "id": 78,
+                            "id": 76,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
                             "memberName": "resolved",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 13,
-                            "src": "984:24:1",
+                            "referencedDeclaration": 11,
+                            "src": "984:24:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
@@ -1137,14 +1137,14 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "74727565",
-                            "id": 79,
+                            "id": 77,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "bool",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1011:4:1",
+                            "src": "1011:4:0",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -1152,15 +1152,15 @@
                             },
                             "value": "true"
                           },
-                          "src": "984:31:1",
+                          "src": "984:31:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 81,
+                        "id": 79,
                         "nodeType": "ExpressionStatement",
-                        "src": "984:31:1"
+                        "src": "984:31:0"
                       }
                     ]
                   }
@@ -1168,23 +1168,23 @@
               ]
             },
             "documentation": null,
-            "id": 85,
+            "id": 83,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "voteOnComplaint",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 49,
+              "id": 47,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 46,
+                  "id": 44,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 85,
-                  "src": "709:8:1",
+                  "scope": 83,
+                  "src": "709:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1192,10 +1192,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 45,
+                    "id": 43,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "709:4:1",
+                    "src": "709:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1206,11 +1206,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 48,
+                  "id": 46,
                   "name": "_approve",
                   "nodeType": "VariableDeclaration",
-                  "scope": 85,
-                  "src": "719:13:1",
+                  "scope": 83,
+                  "src": "719:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1218,10 +1218,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 47,
+                    "id": 45,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "719:4:1",
+                    "src": "719:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1231,53 +1231,53 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "708:25:1"
+              "src": "708:25:0"
             },
             "returnParameters": {
-              "id": 50,
+              "id": 48,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "741:0:1"
+              "src": "741:0:0"
             },
-            "scope": 120,
-            "src": "684:350:1",
+            "scope": 118,
+            "src": "684:350:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 118,
+              "id": 116,
               "nodeType": "Block",
-              "src": "1175:131:1",
+              "src": "1175:131:0",
               "statements": [
                 {
                   "assignments": [
-                    101
+                    99
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 101,
+                      "id": 99,
                       "name": "c",
                       "nodeType": "VariableDeclaration",
-                      "scope": 118,
-                      "src": "1186:18:1",
+                      "scope": 116,
+                      "src": "1186:18:0",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Complaint_$14_memory_ptr",
+                        "typeIdentifier": "t_struct$_Complaint_$12_memory_ptr",
                         "typeString": "struct Grievance.Complaint"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 100,
+                        "id": 98,
                         "name": "Complaint",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 14,
-                        "src": "1186:9:1",
+                        "referencedDeclaration": 12,
+                        "src": "1186:9:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Complaint_$14_storage_ptr",
+                          "typeIdentifier": "t_struct$_Complaint_$12_storage_ptr",
                           "typeString": "struct Grievance.Complaint"
                         }
                       },
@@ -1285,31 +1285,31 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 105,
+                  "id": 103,
                   "initialValue": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 102,
+                      "id": 100,
                       "name": "complaints",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 21,
-                      "src": "1207:10:1",
+                      "referencedDeclaration": 19,
+                      "src": "1207:10:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$14_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Complaint_$12_storage_$",
                         "typeString": "mapping(uint256 => struct Grievance.Complaint storage ref)"
                       }
                     },
-                    "id": 104,
+                    "id": 102,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 103,
+                      "id": 101,
                       "name": "_id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 87,
-                      "src": "1218:3:1",
+                      "referencedDeclaration": 85,
+                      "src": "1218:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1320,14 +1320,14 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "1207:15:1",
+                    "src": "1207:15:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Complaint_$14_storage",
+                      "typeIdentifier": "t_struct$_Complaint_$12_storage",
                       "typeString": "struct Grievance.Complaint storage ref"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1186:36:1"
+                  "src": "1186:36:0"
                 },
                 {
                   "expression": {
@@ -1337,14 +1337,43 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
+                          "id": 104,
+                          "name": "c",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 99,
+                          "src": "1241:1:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Complaint_$12_memory_ptr",
+                            "typeString": "struct Grievance.Complaint memory"
+                          }
+                        },
+                        "id": 105,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "id",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 3,
+                        "src": "1241:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
                           "id": 106,
                           "name": "c",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 101,
-                          "src": "1241:1:1",
+                          "referencedDeclaration": 99,
+                          "src": "1247:1:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Complaint_$14_memory_ptr",
+                            "typeIdentifier": "t_struct$_Complaint_$12_memory_ptr",
                             "typeString": "struct Grievance.Complaint memory"
                           }
                         },
@@ -1353,13 +1382,13 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberName": "id",
+                        "memberName": "studentHash",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 5,
-                        "src": "1241:4:1",
+                        "src": "1247:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
                         }
                       },
                       {
@@ -1370,10 +1399,10 @@
                           "name": "c",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 101,
-                          "src": "1247:1:1",
+                          "referencedDeclaration": 99,
+                          "src": "1262:1:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Complaint_$14_memory_ptr",
+                            "typeIdentifier": "t_struct$_Complaint_$12_memory_ptr",
                             "typeString": "struct Grievance.Complaint memory"
                           }
                         },
@@ -1382,13 +1411,13 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberName": "studentHash",
+                        "memberName": "ipfsHash",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 7,
-                        "src": "1247:13:1",
+                        "src": "1262:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_bytes32",
-                          "typeString": "bytes32"
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
                         }
                       },
                       {
@@ -1399,10 +1428,10 @@
                           "name": "c",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 101,
-                          "src": "1262:1:1",
+                          "referencedDeclaration": 99,
+                          "src": "1274:1:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Complaint_$14_memory_ptr",
+                            "typeIdentifier": "t_struct$_Complaint_$12_memory_ptr",
                             "typeString": "struct Grievance.Complaint memory"
                           }
                         },
@@ -1411,13 +1440,13 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberName": "ipfsHash",
+                        "memberName": "voteCount",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 9,
-                        "src": "1262:10:1",
+                        "src": "1274:11:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory",
-                          "typeString": "string memory"
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
                         }
                       },
                       {
@@ -1428,10 +1457,10 @@
                           "name": "c",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 101,
-                          "src": "1274:1:1",
+                          "referencedDeclaration": 99,
+                          "src": "1287:1:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Complaint_$14_memory_ptr",
+                            "typeIdentifier": "t_struct$_Complaint_$12_memory_ptr",
                             "typeString": "struct Grievance.Complaint memory"
                           }
                         },
@@ -1440,83 +1469,54 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberName": "voteCount",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 11,
-                        "src": "1274:11:1",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 114,
-                          "name": "c",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 101,
-                          "src": "1287:1:1",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Complaint_$14_memory_ptr",
-                            "typeString": "struct Grievance.Complaint memory"
-                          }
-                        },
-                        "id": 115,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
                         "memberName": "resolved",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13,
-                        "src": "1287:10:1",
+                        "referencedDeclaration": 11,
+                        "src": "1287:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         }
                       }
                     ],
-                    "id": 116,
+                    "id": 114,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "TupleExpression",
-                    "src": "1240:58:1",
+                    "src": "1240:58:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$_t_uint256_$_t_bytes32_$_t_string_memory_$_t_uint256_$_t_bool_$",
                       "typeString": "tuple(uint256,bytes32,string memory,uint256,bool)"
                     }
                   },
-                  "functionReturnParameters": 99,
-                  "id": 117,
+                  "functionReturnParameters": 97,
+                  "id": 115,
                   "nodeType": "Return",
-                  "src": "1233:65:1"
+                  "src": "1233:65:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 119,
+            "id": 117,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getComplaint",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 88,
+              "id": 86,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 87,
+                  "id": 85,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 119,
-                  "src": "1086:8:1",
+                  "scope": 117,
+                  "src": "1086:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1524,10 +1524,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 86,
+                    "id": 84,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1086:4:1",
+                    "src": "1086:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1537,19 +1537,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1085:10:1"
+              "src": "1085:10:0"
             },
             "returnParameters": {
-              "id": 99,
+              "id": 97,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 90,
+                  "id": 88,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 119,
-                  "src": "1127:4:1",
+                  "scope": 117,
+                  "src": "1127:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1557,10 +1557,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 89,
+                    "id": 87,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1127:4:1",
+                    "src": "1127:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1571,11 +1571,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 92,
+                  "id": 90,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 119,
-                  "src": "1133:7:1",
+                  "scope": 117,
+                  "src": "1133:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1583,10 +1583,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 91,
+                    "id": 89,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1133:7:1",
+                    "src": "1133:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1597,11 +1597,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 94,
+                  "id": 92,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 119,
-                  "src": "1142:13:1",
+                  "scope": 117,
+                  "src": "1142:13:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1609,10 +1609,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 93,
+                    "id": 91,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1142:6:1",
+                    "src": "1142:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1623,11 +1623,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 96,
+                  "id": 94,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 119,
-                  "src": "1157:4:1",
+                  "scope": 117,
+                  "src": "1157:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1635,10 +1635,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 95,
+                    "id": 93,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1157:4:1",
+                    "src": "1157:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1649,11 +1649,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 98,
+                  "id": 96,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 119,
-                  "src": "1163:4:1",
+                  "scope": 117,
+                  "src": "1163:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1661,10 +1661,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 97,
+                    "id": 95,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1163:4:1",
+                    "src": "1163:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1674,27 +1674,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1116:58:1"
+              "src": "1116:58:0"
             },
-            "scope": 120,
-            "src": "1064:242:1",
+            "scope": 118,
+            "src": "1064:242:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 121,
-        "src": "61:1248:1"
+        "scope": 119,
+        "src": "61:1248:0"
       }
     ],
-    "src": "33:1276:1"
+    "src": "33:1276:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/Grievance.sol",
       "exportedSymbols": {
         "Grievance": [
-          120
+          118
         ]
       }
     },
@@ -1708,9 +1708,9 @@
             ".16"
           ]
         },
-        "id": 3,
+        "id": 1,
         "name": "PragmaDirective",
-        "src": "33:24:1"
+        "src": "33:24:0"
       },
       {
         "attributes": {
@@ -1724,17 +1724,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            120
+            118
           ],
           "name": "Grievance",
-          "scope": 121
+          "scope": 119
         },
         "children": [
           {
             "attributes": {
               "canonicalName": "Grievance.Complaint",
               "name": "Complaint",
-              "scope": 120,
+              "scope": 118,
               "visibility": "public"
             },
             "children": [
@@ -1742,7 +1742,7 @@
                 "attributes": {
                   "constant": false,
                   "name": "id",
-                  "scope": 14,
+                  "scope": 12,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -1755,20 +1755,20 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 4,
+                    "id": 2,
                     "name": "ElementaryTypeName",
-                    "src": "117:4:1"
+                    "src": "117:4:0"
                   }
                 ],
-                "id": 5,
+                "id": 3,
                 "name": "VariableDeclaration",
-                "src": "117:7:1"
+                "src": "117:7:0"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "studentHash",
-                  "scope": 14,
+                  "scope": 12,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bytes32",
@@ -1781,20 +1781,20 @@
                       "name": "bytes32",
                       "type": "bytes32"
                     },
-                    "id": 6,
+                    "id": 4,
                     "name": "ElementaryTypeName",
-                    "src": "135:7:1"
+                    "src": "135:7:0"
                   }
                 ],
-                "id": 7,
+                "id": 5,
                 "name": "VariableDeclaration",
-                "src": "135:19:1"
+                "src": "135:19:0"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "ipfsHash",
-                  "scope": 14,
+                  "scope": 12,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -1807,20 +1807,20 @@
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 8,
+                    "id": 6,
                     "name": "ElementaryTypeName",
-                    "src": "165:6:1"
+                    "src": "165:6:0"
                   }
                 ],
-                "id": 9,
+                "id": 7,
                 "name": "VariableDeclaration",
-                "src": "165:15:1"
+                "src": "165:15:0"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "voteCount",
-                  "scope": 14,
+                  "scope": 12,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -1833,20 +1833,20 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 10,
+                    "id": 8,
                     "name": "ElementaryTypeName",
-                    "src": "191:4:1"
+                    "src": "191:4:0"
                   }
                 ],
-                "id": 11,
+                "id": 9,
                 "name": "VariableDeclaration",
-                "src": "191:14:1"
+                "src": "191:14:0"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "resolved",
-                  "scope": 14,
+                  "scope": 12,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bool",
@@ -1859,25 +1859,25 @@
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 12,
+                    "id": 10,
                     "name": "ElementaryTypeName",
-                    "src": "216:4:1"
+                    "src": "216:4:0"
                   }
                 ],
-                "id": 13,
+                "id": 11,
                 "name": "VariableDeclaration",
-                "src": "216:13:1"
+                "src": "216:13:0"
               }
             ],
-            "id": 14,
+            "id": 12,
             "name": "StructDefinition",
-            "src": "89:148:1"
+            "src": "89:148:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "complaintCount",
-              "scope": 120,
+              "scope": 118,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -1889,9 +1889,9 @@
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 15,
+                "id": 13,
                 "name": "ElementaryTypeName",
-                "src": "245:4:1"
+                "src": "245:4:0"
               },
               {
                 "attributes": {
@@ -1906,20 +1906,20 @@
                   "type": "int_const 0",
                   "value": "0"
                 },
-                "id": 16,
+                "id": 14,
                 "name": "Literal",
-                "src": "274:1:1"
+                "src": "274:1:0"
               }
             ],
-            "id": 17,
+            "id": 15,
             "name": "VariableDeclaration",
-            "src": "245:30:1"
+            "src": "245:30:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "complaints",
-              "scope": 120,
+              "scope": 118,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => struct Grievance.Complaint)",
@@ -1937,30 +1937,30 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 18,
+                    "id": 16,
                     "name": "ElementaryTypeName",
-                    "src": "292:4:1"
+                    "src": "292:4:0"
                   },
                   {
                     "attributes": {
                       "contractScope": null,
                       "name": "Complaint",
-                      "referencedDeclaration": 14,
+                      "referencedDeclaration": 12,
                       "type": "struct Grievance.Complaint"
                     },
-                    "id": 19,
+                    "id": 17,
                     "name": "UserDefinedTypeName",
-                    "src": "300:9:1"
+                    "src": "300:9:0"
                   }
                 ],
-                "id": 20,
+                "id": 18,
                 "name": "Mapping",
-                "src": "284:26:1"
+                "src": "284:26:0"
               }
             ],
-            "id": 21,
+            "id": 19,
             "name": "VariableDeclaration",
-            "src": "284:44:1"
+            "src": "284:44:0"
           },
           {
             "attributes": {
@@ -1972,7 +1972,7 @@
                 null
               ],
               "name": "fileComplaint",
-              "scope": 120,
+              "scope": 118,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1984,7 +1984,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_studentHash",
-                      "scope": 44,
+                      "scope": 42,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes32",
@@ -1997,20 +1997,20 @@
                           "name": "bytes32",
                           "type": "bytes32"
                         },
-                        "id": 22,
+                        "id": 20,
                         "name": "ElementaryTypeName",
-                        "src": "383:7:1"
+                        "src": "383:7:0"
                       }
                     ],
-                    "id": 23,
+                    "id": 21,
                     "name": "VariableDeclaration",
-                    "src": "383:20:1"
+                    "src": "383:20:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_ipfsHash",
-                      "scope": 44,
+                      "scope": 42,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -2023,19 +2023,19 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 24,
+                        "id": 22,
                         "name": "ElementaryTypeName",
-                        "src": "405:6:1"
+                        "src": "405:6:0"
                       }
                     ],
-                    "id": 25,
+                    "id": 23,
                     "name": "VariableDeclaration",
-                    "src": "405:23:1"
+                    "src": "405:23:0"
                   }
                 ],
-                "id": 26,
+                "id": 24,
                 "name": "ParameterList",
-                "src": "382:47:1"
+                "src": "382:47:0"
               },
               {
                 "attributes": {
@@ -2044,9 +2044,9 @@
                   ]
                 },
                 "children": [],
-                "id": 27,
+                "id": 25,
                 "name": "ParameterList",
-                "src": "437:0:1"
+                "src": "437:0:0"
               },
               {
                 "children": [
@@ -2070,23 +2070,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 17,
+                              "referencedDeclaration": 15,
                               "type": "uint256",
                               "value": "complaintCount"
                             },
-                            "id": 28,
+                            "id": 26,
                             "name": "Identifier",
-                            "src": "448:14:1"
+                            "src": "448:14:0"
                           }
                         ],
-                        "id": 29,
+                        "id": 27,
                         "name": "UnaryOperation",
-                        "src": "448:16:1"
+                        "src": "448:16:0"
                       }
                     ],
-                    "id": 30,
+                    "id": 28,
                     "name": "ExpressionStatement",
-                    "src": "448:16:1"
+                    "src": "448:16:0"
                   },
                   {
                     "children": [
@@ -2117,13 +2117,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 21,
+                                  "referencedDeclaration": 19,
                                   "type": "mapping(uint256 => struct Grievance.Complaint storage ref)",
                                   "value": "complaints"
                                 },
-                                "id": 31,
+                                "id": 29,
                                 "name": "Identifier",
-                                "src": "477:10:1"
+                                "src": "477:10:0"
                               },
                               {
                                 "attributes": {
@@ -2131,18 +2131,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 17,
+                                  "referencedDeclaration": 15,
                                   "type": "uint256",
                                   "value": "complaintCount"
                                 },
-                                "id": 32,
+                                "id": 30,
                                 "name": "Identifier",
-                                "src": "488:14:1"
+                                "src": "488:14:0"
                               }
                             ],
-                            "id": 33,
+                            "id": 31,
                             "name": "IndexAccess",
-                            "src": "477:26:1"
+                            "src": "477:26:0"
                           },
                           {
                             "attributes": {
@@ -2186,13 +2186,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 14,
+                                  "referencedDeclaration": 12,
                                   "type": "type(struct Grievance.Complaint storage pointer)",
                                   "value": "Complaint"
                                 },
-                                "id": 34,
+                                "id": 32,
                                 "name": "Identifier",
-                                "src": "506:9:1"
+                                "src": "506:9:0"
                               },
                               {
                                 "attributes": {
@@ -2200,13 +2200,27 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 17,
+                                  "referencedDeclaration": 15,
                                   "type": "uint256",
                                   "value": "complaintCount"
                                 },
-                                "id": 35,
+                                "id": 33,
                                 "name": "Identifier",
-                                "src": "530:14:1"
+                                "src": "530:14:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 21,
+                                  "type": "bytes32",
+                                  "value": "_studentHash"
+                                },
+                                "id": 34,
+                                "name": "Identifier",
+                                "src": "559:12:0"
                               },
                               {
                                 "attributes": {
@@ -2215,26 +2229,12 @@
                                     null
                                   ],
                                   "referencedDeclaration": 23,
-                                  "type": "bytes32",
-                                  "value": "_studentHash"
-                                },
-                                "id": 36,
-                                "name": "Identifier",
-                                "src": "559:12:1"
-                              },
-                              {
-                                "attributes": {
-                                  "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
-                                  "referencedDeclaration": 25,
                                   "type": "string memory",
                                   "value": "_ipfsHash"
                                 },
-                                "id": 37,
+                                "id": 35,
                                 "name": "Identifier",
-                                "src": "586:9:1"
+                                "src": "586:9:0"
                               },
                               {
                                 "attributes": {
@@ -2249,9 +2249,9 @@
                                   "type": "int_const 0",
                                   "value": "0"
                                 },
-                                "id": 38,
+                                "id": 36,
                                 "name": "Literal",
-                                "src": "610:1:1"
+                                "src": "610:1:0"
                               },
                               {
                                 "attributes": {
@@ -2266,34 +2266,34 @@
                                   "type": "bool",
                                   "value": "false"
                                 },
-                                "id": 39,
+                                "id": 37,
                                 "name": "Literal",
-                                "src": "626:5:1"
+                                "src": "626:5:0"
                               }
                             ],
-                            "id": 40,
+                            "id": 38,
                             "name": "FunctionCall",
-                            "src": "506:136:1"
+                            "src": "506:136:0"
                           }
                         ],
-                        "id": 41,
+                        "id": 39,
                         "name": "Assignment",
-                        "src": "477:165:1"
+                        "src": "477:165:0"
                       }
                     ],
-                    "id": 42,
+                    "id": 40,
                     "name": "ExpressionStatement",
-                    "src": "477:165:1"
+                    "src": "477:165:0"
                   }
                 ],
-                "id": 43,
+                "id": 41,
                 "name": "Block",
-                "src": "437:213:1"
+                "src": "437:213:0"
               }
             ],
-            "id": 44,
+            "id": 42,
             "name": "FunctionDefinition",
-            "src": "360:290:1"
+            "src": "360:290:0"
           },
           {
             "attributes": {
@@ -2305,7 +2305,7 @@
                 null
               ],
               "name": "voteOnComplaint",
-              "scope": 120,
+              "scope": 118,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -2317,7 +2317,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_id",
-                      "scope": 85,
+                      "scope": 83,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2330,20 +2330,20 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 45,
+                        "id": 43,
                         "name": "ElementaryTypeName",
-                        "src": "709:4:1"
+                        "src": "709:4:0"
                       }
                     ],
-                    "id": 46,
+                    "id": 44,
                     "name": "VariableDeclaration",
-                    "src": "709:8:1"
+                    "src": "709:8:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_approve",
-                      "scope": 85,
+                      "scope": 83,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -2356,19 +2356,19 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 47,
+                        "id": 45,
                         "name": "ElementaryTypeName",
-                        "src": "719:4:1"
+                        "src": "719:4:0"
                       }
                     ],
-                    "id": 48,
+                    "id": 46,
                     "name": "VariableDeclaration",
-                    "src": "719:13:1"
+                    "src": "719:13:0"
                   }
                 ],
-                "id": 49,
+                "id": 47,
                 "name": "ParameterList",
-                "src": "708:25:1"
+                "src": "708:25:0"
               },
               {
                 "attributes": {
@@ -2377,9 +2377,9 @@
                   ]
                 },
                 "children": [],
-                "id": 50,
+                "id": 48,
                 "name": "ParameterList",
-                "src": "741:0:1"
+                "src": "741:0:0"
               },
               {
                 "children": [
@@ -2413,16 +2413,16 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                138,
-                                139
+                                136,
+                                137
                               ],
-                              "referencedDeclaration": 139,
+                              "referencedDeclaration": 137,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 51,
+                            "id": 49,
                             "name": "Identifier",
-                            "src": "752:7:1"
+                            "src": "752:7:0"
                           },
                           {
                             "attributes": {
@@ -2444,7 +2444,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "resolved",
-                                  "referencedDeclaration": 13,
+                                  "referencedDeclaration": 11,
                                   "type": "bool"
                                 },
                                 "children": [
@@ -2464,13 +2464,13 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 21,
+                                          "referencedDeclaration": 19,
                                           "type": "mapping(uint256 => struct Grievance.Complaint storage ref)",
                                           "value": "complaints"
                                         },
-                                        "id": 52,
+                                        "id": 50,
                                         "name": "Identifier",
-                                        "src": "761:10:1"
+                                        "src": "761:10:0"
                                       },
                                       {
                                         "attributes": {
@@ -2478,28 +2478,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 46,
+                                          "referencedDeclaration": 44,
                                           "type": "uint256",
                                           "value": "_id"
                                         },
-                                        "id": 53,
+                                        "id": 51,
                                         "name": "Identifier",
-                                        "src": "772:3:1"
+                                        "src": "772:3:0"
                                       }
                                     ],
-                                    "id": 54,
+                                    "id": 52,
                                     "name": "IndexAccess",
-                                    "src": "761:15:1"
+                                    "src": "761:15:0"
                                   }
                                 ],
-                                "id": 55,
+                                "id": 53,
                                 "name": "MemberAccess",
-                                "src": "761:24:1"
+                                "src": "761:24:0"
                               }
                             ],
-                            "id": 56,
+                            "id": 54,
                             "name": "UnaryOperation",
-                            "src": "760:25:1"
+                            "src": "760:25:0"
                           },
                           {
                             "attributes": {
@@ -2514,19 +2514,19 @@
                               "type": "literal_string \"Already resolved\"",
                               "value": "Already resolved"
                             },
-                            "id": 57,
+                            "id": 55,
                             "name": "Literal",
-                            "src": "787:18:1"
+                            "src": "787:18:0"
                           }
                         ],
-                        "id": 58,
+                        "id": 56,
                         "name": "FunctionCall",
-                        "src": "752:54:1"
+                        "src": "752:54:0"
                       }
                     ],
-                    "id": 59,
+                    "id": 57,
                     "name": "ExpressionStatement",
-                    "src": "752:54:1"
+                    "src": "752:54:0"
                   },
                   {
                     "attributes": {
@@ -2539,13 +2539,13 @@
                           "overloadedDeclarations": [
                             null
                           ],
-                          "referencedDeclaration": 48,
+                          "referencedDeclaration": 46,
                           "type": "bool",
                           "value": "_approve"
                         },
-                        "id": 60,
+                        "id": 58,
                         "name": "Identifier",
-                        "src": "823:8:1"
+                        "src": "823:8:0"
                       },
                       {
                         "children": [
@@ -2571,7 +2571,7 @@
                                       "isPure": false,
                                       "lValueRequested": true,
                                       "member_name": "voteCount",
-                                      "referencedDeclaration": 11,
+                                      "referencedDeclaration": 9,
                                       "type": "uint256"
                                     },
                                     "children": [
@@ -2591,13 +2591,13 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 21,
+                                              "referencedDeclaration": 19,
                                               "type": "mapping(uint256 => struct Grievance.Complaint storage ref)",
                                               "value": "complaints"
                                             },
-                                            "id": 61,
+                                            "id": 59,
                                             "name": "Identifier",
-                                            "src": "848:10:1"
+                                            "src": "848:10:0"
                                           },
                                           {
                                             "attributes": {
@@ -2605,43 +2605,43 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 46,
+                                              "referencedDeclaration": 44,
                                               "type": "uint256",
                                               "value": "_id"
                                             },
-                                            "id": 62,
+                                            "id": 60,
                                             "name": "Identifier",
-                                            "src": "859:3:1"
+                                            "src": "859:3:0"
                                           }
                                         ],
-                                        "id": 63,
+                                        "id": 61,
                                         "name": "IndexAccess",
-                                        "src": "848:15:1"
+                                        "src": "848:15:0"
                                       }
                                     ],
-                                    "id": 64,
+                                    "id": 62,
                                     "name": "MemberAccess",
-                                    "src": "848:25:1"
+                                    "src": "848:25:0"
                                   }
                                 ],
-                                "id": 65,
+                                "id": 63,
                                 "name": "UnaryOperation",
-                                "src": "848:27:1"
+                                "src": "848:27:0"
                               }
                             ],
-                            "id": 66,
+                            "id": 64,
                             "name": "ExpressionStatement",
-                            "src": "848:27:1"
+                            "src": "848:27:0"
                           }
                         ],
-                        "id": 67,
+                        "id": 65,
                         "name": "Block",
-                        "src": "833:54:1"
+                        "src": "833:54:0"
                       }
                     ],
-                    "id": 68,
+                    "id": 66,
                     "name": "IfStatement",
-                    "src": "819:68:1"
+                    "src": "819:68:0"
                   },
                   {
                     "attributes": {
@@ -2671,7 +2671,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "voteCount",
-                              "referencedDeclaration": 11,
+                              "referencedDeclaration": 9,
                               "type": "uint256"
                             },
                             "children": [
@@ -2691,13 +2691,13 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 21,
+                                      "referencedDeclaration": 19,
                                       "type": "mapping(uint256 => struct Grievance.Complaint storage ref)",
                                       "value": "complaints"
                                     },
-                                    "id": 69,
+                                    "id": 67,
                                     "name": "Identifier",
-                                    "src": "937:10:1"
+                                    "src": "937:10:0"
                                   },
                                   {
                                     "attributes": {
@@ -2705,23 +2705,23 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 46,
+                                      "referencedDeclaration": 44,
                                       "type": "uint256",
                                       "value": "_id"
                                     },
-                                    "id": 70,
+                                    "id": 68,
                                     "name": "Identifier",
-                                    "src": "948:3:1"
+                                    "src": "948:3:0"
                                   }
                                 ],
-                                "id": 71,
+                                "id": 69,
                                 "name": "IndexAccess",
-                                "src": "937:15:1"
+                                "src": "937:15:0"
                               }
                             ],
-                            "id": 72,
+                            "id": 70,
                             "name": "MemberAccess",
-                            "src": "937:25:1"
+                            "src": "937:25:0"
                           },
                           {
                             "attributes": {
@@ -2736,14 +2736,14 @@
                               "type": "int_const 3",
                               "value": "3"
                             },
-                            "id": 73,
+                            "id": 71,
                             "name": "Literal",
-                            "src": "966:1:1"
+                            "src": "966:1:0"
                           }
                         ],
-                        "id": 74,
+                        "id": 72,
                         "name": "BinaryOperation",
-                        "src": "937:30:1"
+                        "src": "937:30:0"
                       },
                       {
                         "children": [
@@ -2768,7 +2768,7 @@
                                       "isPure": false,
                                       "lValueRequested": true,
                                       "member_name": "resolved",
-                                      "referencedDeclaration": 13,
+                                      "referencedDeclaration": 11,
                                       "type": "bool"
                                     },
                                     "children": [
@@ -2788,13 +2788,13 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 21,
+                                              "referencedDeclaration": 19,
                                               "type": "mapping(uint256 => struct Grievance.Complaint storage ref)",
                                               "value": "complaints"
                                             },
-                                            "id": 75,
+                                            "id": 73,
                                             "name": "Identifier",
-                                            "src": "984:10:1"
+                                            "src": "984:10:0"
                                           },
                                           {
                                             "attributes": {
@@ -2802,23 +2802,23 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 46,
+                                              "referencedDeclaration": 44,
                                               "type": "uint256",
                                               "value": "_id"
                                             },
-                                            "id": 76,
+                                            "id": 74,
                                             "name": "Identifier",
-                                            "src": "995:3:1"
+                                            "src": "995:3:0"
                                           }
                                         ],
-                                        "id": 77,
+                                        "id": 75,
                                         "name": "IndexAccess",
-                                        "src": "984:15:1"
+                                        "src": "984:15:0"
                                       }
                                     ],
-                                    "id": 78,
+                                    "id": 76,
                                     "name": "MemberAccess",
-                                    "src": "984:24:1"
+                                    "src": "984:24:0"
                                   },
                                   {
                                     "attributes": {
@@ -2833,39 +2833,39 @@
                                       "type": "bool",
                                       "value": "true"
                                     },
-                                    "id": 79,
+                                    "id": 77,
                                     "name": "Literal",
-                                    "src": "1011:4:1"
+                                    "src": "1011:4:0"
                                   }
                                 ],
-                                "id": 80,
+                                "id": 78,
                                 "name": "Assignment",
-                                "src": "984:31:1"
+                                "src": "984:31:0"
                               }
                             ],
-                            "id": 81,
+                            "id": 79,
                             "name": "ExpressionStatement",
-                            "src": "984:31:1"
+                            "src": "984:31:0"
                           }
                         ],
-                        "id": 82,
+                        "id": 80,
                         "name": "Block",
-                        "src": "969:58:1"
+                        "src": "969:58:0"
                       }
                     ],
-                    "id": 83,
+                    "id": 81,
                     "name": "IfStatement",
-                    "src": "933:94:1"
+                    "src": "933:94:0"
                   }
                 ],
-                "id": 84,
+                "id": 82,
                 "name": "Block",
-                "src": "741:293:1"
+                "src": "741:293:0"
               }
             ],
-            "id": 85,
+            "id": 83,
             "name": "FunctionDefinition",
-            "src": "684:350:1"
+            "src": "684:350:0"
           },
           {
             "attributes": {
@@ -2877,7 +2877,7 @@
                 null
               ],
               "name": "getComplaint",
-              "scope": 120,
+              "scope": 118,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2889,7 +2889,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_id",
-                      "scope": 119,
+                      "scope": 117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2902,19 +2902,19 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 86,
+                        "id": 84,
                         "name": "ElementaryTypeName",
-                        "src": "1086:4:1"
+                        "src": "1086:4:0"
                       }
                     ],
-                    "id": 87,
+                    "id": 85,
                     "name": "VariableDeclaration",
-                    "src": "1086:8:1"
+                    "src": "1086:8:0"
                   }
                 ],
-                "id": 88,
+                "id": 86,
                 "name": "ParameterList",
-                "src": "1085:10:1"
+                "src": "1085:10:0"
               },
               {
                 "children": [
@@ -2922,7 +2922,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 119,
+                      "scope": 117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2935,20 +2935,20 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 89,
+                        "id": 87,
                         "name": "ElementaryTypeName",
-                        "src": "1127:4:1"
+                        "src": "1127:4:0"
                       }
                     ],
-                    "id": 90,
+                    "id": 88,
                     "name": "VariableDeclaration",
-                    "src": "1127:4:1"
+                    "src": "1127:4:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 119,
+                      "scope": 117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bytes32",
@@ -2961,20 +2961,20 @@
                           "name": "bytes32",
                           "type": "bytes32"
                         },
-                        "id": 91,
+                        "id": 89,
                         "name": "ElementaryTypeName",
-                        "src": "1133:7:1"
+                        "src": "1133:7:0"
                       }
                     ],
-                    "id": 92,
+                    "id": 90,
                     "name": "VariableDeclaration",
-                    "src": "1133:7:1"
+                    "src": "1133:7:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 119,
+                      "scope": 117,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -2987,20 +2987,20 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 93,
+                        "id": 91,
                         "name": "ElementaryTypeName",
-                        "src": "1142:6:1"
+                        "src": "1142:6:0"
                       }
                     ],
-                    "id": 94,
+                    "id": 92,
                     "name": "VariableDeclaration",
-                    "src": "1142:13:1"
+                    "src": "1142:13:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 119,
+                      "scope": 117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -3013,20 +3013,20 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 95,
+                        "id": 93,
                         "name": "ElementaryTypeName",
-                        "src": "1157:4:1"
+                        "src": "1157:4:0"
                       }
                     ],
-                    "id": 96,
+                    "id": 94,
                     "name": "VariableDeclaration",
-                    "src": "1157:4:1"
+                    "src": "1157:4:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 119,
+                      "scope": 117,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -3039,26 +3039,26 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 97,
+                        "id": 95,
                         "name": "ElementaryTypeName",
-                        "src": "1163:4:1"
+                        "src": "1163:4:0"
                       }
                     ],
-                    "id": 98,
+                    "id": 96,
                     "name": "VariableDeclaration",
-                    "src": "1163:4:1"
+                    "src": "1163:4:0"
                   }
                 ],
-                "id": 99,
+                "id": 97,
                 "name": "ParameterList",
-                "src": "1116:58:1"
+                "src": "1116:58:0"
               },
               {
                 "children": [
                   {
                     "attributes": {
                       "assignments": [
-                        101
+                        99
                       ]
                     },
                     "children": [
@@ -3066,7 +3066,7 @@
                         "attributes": {
                           "constant": false,
                           "name": "c",
-                          "scope": 118,
+                          "scope": 116,
                           "stateVariable": false,
                           "storageLocation": "memory",
                           "type": "struct Grievance.Complaint",
@@ -3078,17 +3078,17 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Complaint",
-                              "referencedDeclaration": 14,
+                              "referencedDeclaration": 12,
                               "type": "struct Grievance.Complaint"
                             },
-                            "id": 100,
+                            "id": 98,
                             "name": "UserDefinedTypeName",
-                            "src": "1186:9:1"
+                            "src": "1186:9:0"
                           }
                         ],
-                        "id": 101,
+                        "id": 99,
                         "name": "VariableDeclaration",
-                        "src": "1186:18:1"
+                        "src": "1186:18:0"
                       },
                       {
                         "attributes": {
@@ -3106,13 +3106,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 21,
+                              "referencedDeclaration": 19,
                               "type": "mapping(uint256 => struct Grievance.Complaint storage ref)",
                               "value": "complaints"
                             },
-                            "id": 102,
+                            "id": 100,
                             "name": "Identifier",
-                            "src": "1207:10:1"
+                            "src": "1207:10:0"
                           },
                           {
                             "attributes": {
@@ -3120,27 +3120,27 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 87,
+                              "referencedDeclaration": 85,
                               "type": "uint256",
                               "value": "_id"
                             },
-                            "id": 103,
+                            "id": 101,
                             "name": "Identifier",
-                            "src": "1218:3:1"
+                            "src": "1218:3:0"
                           }
                         ],
-                        "id": 104,
+                        "id": 102,
                         "name": "IndexAccess",
-                        "src": "1207:15:1"
+                        "src": "1207:15:0"
                       }
                     ],
-                    "id": 105,
+                    "id": 103,
                     "name": "VariableDeclarationStatement",
-                    "src": "1186:36:1"
+                    "src": "1186:36:0"
                   },
                   {
                     "attributes": {
-                      "functionReturnParameters": 99
+                      "functionReturnParameters": 97
                     },
                     "children": [
                       {
@@ -3162,7 +3162,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "id",
-                              "referencedDeclaration": 5,
+                              "referencedDeclaration": 3,
                               "type": "uint256"
                             },
                             "children": [
@@ -3172,18 +3172,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 101,
+                                  "referencedDeclaration": 99,
                                   "type": "struct Grievance.Complaint memory",
                                   "value": "c"
                                 },
-                                "id": 106,
+                                "id": 104,
                                 "name": "Identifier",
-                                "src": "1241:1:1"
+                                "src": "1241:1:0"
                               }
                             ],
-                            "id": 107,
+                            "id": 105,
                             "name": "MemberAccess",
-                            "src": "1241:4:1"
+                            "src": "1241:4:0"
                           },
                           {
                             "attributes": {
@@ -3193,7 +3193,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "studentHash",
-                              "referencedDeclaration": 7,
+                              "referencedDeclaration": 5,
                               "type": "bytes32"
                             },
                             "children": [
@@ -3203,18 +3203,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 101,
+                                  "referencedDeclaration": 99,
                                   "type": "struct Grievance.Complaint memory",
                                   "value": "c"
                                 },
-                                "id": 108,
+                                "id": 106,
                                 "name": "Identifier",
-                                "src": "1247:1:1"
+                                "src": "1247:1:0"
                               }
                             ],
-                            "id": 109,
+                            "id": 107,
                             "name": "MemberAccess",
-                            "src": "1247:13:1"
+                            "src": "1247:13:0"
                           },
                           {
                             "attributes": {
@@ -3224,7 +3224,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "ipfsHash",
-                              "referencedDeclaration": 9,
+                              "referencedDeclaration": 7,
                               "type": "string memory"
                             },
                             "children": [
@@ -3234,18 +3234,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 101,
+                                  "referencedDeclaration": 99,
                                   "type": "struct Grievance.Complaint memory",
                                   "value": "c"
                                 },
-                                "id": 110,
+                                "id": 108,
                                 "name": "Identifier",
-                                "src": "1262:1:1"
+                                "src": "1262:1:0"
                               }
                             ],
-                            "id": 111,
+                            "id": 109,
                             "name": "MemberAccess",
-                            "src": "1262:10:1"
+                            "src": "1262:10:0"
                           },
                           {
                             "attributes": {
@@ -3255,7 +3255,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "voteCount",
-                              "referencedDeclaration": 11,
+                              "referencedDeclaration": 9,
                               "type": "uint256"
                             },
                             "children": [
@@ -3265,18 +3265,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 101,
+                                  "referencedDeclaration": 99,
                                   "type": "struct Grievance.Complaint memory",
                                   "value": "c"
                                 },
-                                "id": 112,
+                                "id": 110,
                                 "name": "Identifier",
-                                "src": "1274:1:1"
+                                "src": "1274:1:0"
                               }
                             ],
-                            "id": 113,
+                            "id": 111,
                             "name": "MemberAccess",
-                            "src": "1274:11:1"
+                            "src": "1274:11:0"
                           },
                           {
                             "attributes": {
@@ -3286,7 +3286,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "resolved",
-                              "referencedDeclaration": 13,
+                              "referencedDeclaration": 11,
                               "type": "bool"
                             },
                             "children": [
@@ -3296,48 +3296,48 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 101,
+                                  "referencedDeclaration": 99,
                                   "type": "struct Grievance.Complaint memory",
                                   "value": "c"
                                 },
-                                "id": 114,
+                                "id": 112,
                                 "name": "Identifier",
-                                "src": "1287:1:1"
+                                "src": "1287:1:0"
                               }
                             ],
-                            "id": 115,
+                            "id": 113,
                             "name": "MemberAccess",
-                            "src": "1287:10:1"
+                            "src": "1287:10:0"
                           }
                         ],
-                        "id": 116,
+                        "id": 114,
                         "name": "TupleExpression",
-                        "src": "1240:58:1"
+                        "src": "1240:58:0"
                       }
                     ],
-                    "id": 117,
+                    "id": 115,
                     "name": "Return",
-                    "src": "1233:65:1"
+                    "src": "1233:65:0"
                   }
                 ],
-                "id": 118,
+                "id": 116,
                 "name": "Block",
-                "src": "1175:131:1"
+                "src": "1175:131:0"
               }
             ],
-            "id": 119,
+            "id": 117,
             "name": "FunctionDefinition",
-            "src": "1064:242:1"
+            "src": "1064:242:0"
           }
         ],
-        "id": 120,
+        "id": 118,
         "name": "ContractDefinition",
-        "src": "61:1248:1"
+        "src": "61:1248:0"
       }
     ],
-    "id": 121,
+    "id": 119,
     "name": "SourceUnit",
-    "src": "33:1276:1"
+    "src": "33:1276:0"
   },
   "compiler": {
     "name": "solc",
@@ -3347,12 +3347,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x945669480164fC74043918B41cd738BCAc6D1a13",
-      "transactionHash": "0x46ac470c920c170209785707f6dc2841587b6095a8567591ca9d4f868b3b48c7"
+      "address": "0x977B1d5DB992A10b251Dca98Fc7aa6789D1Fdb9a",
+      "transactionHash": "0x4326ad182b54ace27fac15a56e7c37865846164db417cbad8f4bfbc336652800"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2026-04-17T06:56:59.454Z",
+  "updatedAt": "2026-04-16T17:48:33.072Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
